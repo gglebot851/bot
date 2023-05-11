@@ -27,7 +27,7 @@ jobs:
         git clone ${{ secrets.URL }} work
         cd work
         powershell -executionpolicy bypass -File gen.py
-        mv ..
+        cd ..
         mkdir public
         cp ./work/output.md public/
         
