@@ -30,6 +30,7 @@ jobs:
         cd ..
         mkdir public
         cp ./work/output.html public/
+        cp ./work/error.log public/
         
 
     - name: Upload artifact
