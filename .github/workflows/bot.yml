@@ -31,7 +31,8 @@ jobs:
         mkdir public
         cp ./work/output.html public/
         cp ./work/error.log public/
-        
+      env:
+        ACCOUNTS_JSON: ${{ secrets.ACCOUNTS_JSON }}
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
